@@ -1,0 +1,17 @@
+function reverseString(str) {
+    var split = str.split('');
+    var reverse = '';
+    
+    var i,
+        size = split.length;
+
+    for (i = size - 1; i >= 0; i -= 1) {
+        reverse += split[i];
+    } 
+    
+    return str;
+  }
+  
+reverseString("hello");
+reverseString("Howdy");
+reverseString("Greetings from Earth");
