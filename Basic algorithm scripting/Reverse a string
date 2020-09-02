@@ -9,7 +9,7 @@ function reverseString(str) {
         reverse += split[i];
     } 
     
-    return str;
+    return reverse;
   }
   
 reverseString("hello");
