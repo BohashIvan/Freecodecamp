@@ -1,2 +1,2 @@
-# Freecodecamp
+# FreeCodeCamp
 Learning to code
