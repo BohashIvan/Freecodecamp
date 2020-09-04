@@ -1,17 +1,15 @@
-function reverseString(str) {
-    var split = str.split('');
-    var reverse = '';
-    
+function reverseString(str) {      
     var i,
-        size = split.length;
+        size = str.length,
+        reverse = '';
 
     for (i = size - 1; i >= 0; i -= 1) {
-        reverse += split[i];
+        reverse += str[i];
     } 
     
     return reverse;
-  }
-  
-reverseString("hello");
-reverseString("Howdy");
-reverseString("Greetings from Earth");
+};
+
+console.log(reverseString("hello"));
+console.log(reverseString("Howdy"));
+console.log(reverseString("Greetings from Earth"));
