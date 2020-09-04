@@ -1,10 +1,8 @@
 function findLongestWordLength(str) {
-    var words = str.split(' ');
-    // console.log(words);
-
+    var words = str.split(' ');    
     var longestWord = '';
-    for (var word of words) {
-        // console.log(word);
+    
+    for (var word of words) {        
         if (word.length > longestWord.length) {
             longestWord = word;
         }
@@ -12,9 +10,8 @@ function findLongestWordLength(str) {
     return longestWord.length;
 }
 
-var first = findLongestWordLength("The quick brown fox jumped over the lazy dog");
-var second = findLongestWordLength("May the force be with you");
-var third = findLongestWordLength("Google do a barrel roll");
-var fourth = findLongestWordLength("What is the average airspeed velocity of an unladen swallow");
-var fifth = findLongestWordLength("What if we try a super-long word such as otorhinolaryngology");
-console.log(first, second, third, fourth, fifth);
+console.log(findLongestWordLength("The quick brown fox jumped over the lazy dog"));
+console.log(findLongestWordLength("May the force be with you"));
+console.log(findLongestWordLength("Google do a barrel roll"));
+console.log(findLongestWordLength("What is the average airspeed velocity of an unladen swallow"));
+console.log(findLongestWordLength("What if we try a super-long word such as otorhinolaryngology"));
