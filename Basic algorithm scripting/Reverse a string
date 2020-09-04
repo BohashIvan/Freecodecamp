@@ -8,7 +8,11 @@ function reverseString(str) {
     } 
     
     return reverse;
+    
+    // return str.split('').reverse().join('');
 };
+
+
 
 console.log(reverseString("hello"));
 console.log(reverseString("Howdy"));
