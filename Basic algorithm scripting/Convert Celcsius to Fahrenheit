@@ -3,11 +3,10 @@ function convertToF(celsius) {
     return fahrenheit;
 }
   
-var converted1 = convertToF(0);
-var converted2 = convertToF(-30);
-var converted3 = convertToF(-10);
-var converted4 = convertToF(0);
-var converted5 = convertToF(20);
-var converted6 = convertToF(30);
+console.log(convertToF(0));
+console.log(convertToF(-30));
+console.log(convertToF(-10));
+console.log(convertToF(0));
+console.log(convertToF(20));
+console.log(convertToF(30));
 
-console.log(converted1, converted2, converted3, converted4, converted5, converted6);
