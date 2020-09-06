@@ -1,0 +1,50 @@
+    Pop
+function pop(arr) {
+    var lastElement = arr.length - 1;
+    var newArr = arr.splice(lastElement, 1);
+    return arr;
+}
+
+console.log(pop([1, 2, 3, 4, 5]));
+
+    Push
+function push(arr, newElement) {
+    arr[arr.length] = newElement;
+    console.log(arr);  
+}
+
+console.log(push([1, 2, 3, 4, 5], 6));
+
+    Map
+function map(arr) {
+    var newArr = [],
+        i,
+        size = arr.length;
+
+    for (i = 0; i < size; i += 1) {
+        arr[i] *= 2;
+        newArr.push(arr[i]);
+    }
+   return newArr; 
+}
+console.log(map([1, 2, 3, 4, 5]));
+
+    Filter (even number)
+var array = [13, 26, 43, 164, 514];
+function evenNumber(arr) {           
+    return arr % 2 === 0;       
+}
+console.log(array.filter(evenNumber));
+
+    forEach
+var arr = ['item1', 'item2', 'item3'];
+var newArr = [],
+    i,
+    size = arr.length; 
+
+for (i = 0; i < size; i += 1) {
+    newArr.push(arr[i] + '-0');
+    console.log(arr[i]);
+}
+console.log(newArr);
+
