@@ -1,0 +1,14 @@
+function repeatStringNumTimes(str, num) {
+    if (num < 0) {
+        return '';
+    }
+    var empty = '';
+    for (var i = num; i >= 1; i -= 1) {
+        empty += str;
+    }
+    return empty;
+}
+
+console.log(repeatStringNumTimes('abc', 3));
+console.log(repeatStringNumTimes("*", 3));
+console.log(repeatStringNumTimes("abc", -2));
