@@ -1,0 +1,15 @@
+function confirmEnding(str, target) {
+    var strSize = str.length,
+        targetSize = target.length,           
+        difference = strSize - targetSize,   
+        last = str.substring(difference, strSize);
+    if (last === target) {
+        return true;
+    } else {
+        return false;
+    }    
+}
+  
+console.log(confirmEnding("Bastian", "n"));
+console.log(confirmEnding("He has to give me a new name", "name"));
+console.log(confirmEnding("Connor", "n"));
