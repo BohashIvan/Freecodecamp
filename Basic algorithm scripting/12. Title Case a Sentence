@@ -1,0 +1,11 @@
+function titleCase(str) {
+    var edit = str.toLowerCase().split(' '),
+        i,
+        size = edit.length;
+
+    for (i = 0; i < size; i += 1) {
+        edit[i] = edit[i][0].toUpperCase() + edit[i].slice(1);        
+    }   
+       
+    return edit.join(' ')  
+}
