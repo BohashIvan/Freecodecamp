@@ -1,0 +1,18 @@
+function getIndexToIns(arr, num) {
+    var sorted = arr.sort(function(a, b) {
+        return a - b;
+    });    
+    var position = 0,
+        i,
+        size = sorted.length;
+        for (i = 0; i < size; i += 1) {            
+        if (sorted[i] === num) {
+            position = i;            
+        } else if (sorted[i] < num) {
+            position = i + 1;            
+        }
+    }
+    return position;
+}
+
+console.log(getIndexToIns([5, 3, 20, 3], 5));
