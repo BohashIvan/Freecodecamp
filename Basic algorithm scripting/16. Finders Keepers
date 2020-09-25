@@ -1,0 +1,15 @@
+function findElement(arr, func) {
+    var num = 0,
+        i,
+        size = arr.length;
+        
+    for (i = 0; i < size; i += 1) {
+        if (func(arr[i])) {
+            return arr[i];
+        }        
+    }
+    
+    return undefined;    
+  }
+  
+  console.log(findElement([1, 2, 3, 4], num => num % 2 === 0));
