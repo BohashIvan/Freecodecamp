@@ -1,8 +1,8 @@
 // 1
-function diffArr(arr1, arr2) {
-	return arr1.concat(arr2).filter(function (elem) {
-		return !arr1.includes(elem) || !arr2.includes(elem);
-	});
+function diffArray(arr1, arr2) {
+  return arr1.concat(arr2).filter(function(elem) {
+	  return !arr1.includes(elem) || !arr2.includes(elem);
+  })
 }
 
 // 2 
