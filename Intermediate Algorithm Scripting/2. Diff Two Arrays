@@ -1,0 +1,24 @@
+// 1
+function diffArr(arr1, arr2) {
+	return arr1.concat(arr2).filter(function (elem) {
+		return !arr1.includes(elem) || !arr2.includes(elem);
+	});
+}
+
+// 2 
+function diffArray(arr1, arr2) {
+  var newArr = [];
+	for (var i = 0; i < arr1.length; i += 1) {
+		if (!arr2.includes(arr1[i])) {
+			newArr.push(arr1[i]);
+		}
+	}
+
+	for (var i = 0; i < arr2.length; i += 1) {
+		if (!arr1.includes(arr2[i])) {
+			newArr.push(arr2[i]);
+		}
+	}
+	return newArr;
+}
+
