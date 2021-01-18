@@ -1,0 +1,13 @@
+function destroyer(arr) {
+	var argumentsArr = [],
+		i,
+		size = arguments.length;
+	for (i = 1; i < size; i += 1) {
+		argumentsArr.push(arguments[i]);
+	}
+	return arr.concat(argumentsArr).filter(function (elem) {
+		return !argumentsArr.includes(elem);
+	});
+}
+
+console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
