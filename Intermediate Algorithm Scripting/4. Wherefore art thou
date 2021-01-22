@@ -1,0 +1,17 @@
+function whatIsInAName(collection, source) {
+	var i,
+		sourceKeys = Object.keys(source),
+		size = sourceKeys.length;
+
+	return collection.filter(function (obj) {
+		for (i = 0; i < size; i += 1) {
+			if (
+				!obj.hasOwnProperty(sourceKeys[i]) ||
+				obj[sourceKeys[i]] !== source[sourceKeys[i]]
+			) {
+				return false;
+			}
+		}
+		return true;
+	});
+}
