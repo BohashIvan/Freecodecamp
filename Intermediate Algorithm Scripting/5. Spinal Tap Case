@@ -1,0 +1,24 @@
+function spinalCase(str) {
+	var strSplit = str.split(''),
+		i,
+		size = strSplit.length;
+
+	for (i = 1; i < size; i += 1) {
+		if (strSplit[i] === '_' || strSplit[i] === ' ' || strSplit[i] === '-') {
+			strSplit[i] = '-';
+		} else if (
+			strSplit[i] === strSplit[i].toUpperCase() &&
+			strSplit[i - 1] !== '-' &&
+			strSplit[i - 1] !== ' '
+		) {
+			strSplit[i] = '-' + strSplit[i];
+		}
+	}
+	return strSplit.join('').toLowerCase();
+}
+
+// console.log(spinalCase('This Is Spinal Tap'));
+// console.log(spinalCase('Teletubbies say Eh-oh'));
+// console.log(spinalCase('The_Andy_Griffith_Show'));
+// console.log(spinalCase('thisIsSpinalTap'));
+// console.log(spinalCase('AllThe-small Things'));
